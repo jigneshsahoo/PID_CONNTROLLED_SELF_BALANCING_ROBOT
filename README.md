@@ -33,31 +33,6 @@ The controller performs the following tasks:
 4. Generate a corrective control signal using PID control
 5. Drive the robot back toward equilibrium
 
----
-
-## System Architecture
-
-Initial Perturbation
-        │
-        ▼
-Desired Angle (0°)
-        │
-        ▼
-Error Calculation
-        │
-        ▼
-PID Controller
-(Kp, Ki, Kd)
-        │
-        ▼
-Robot Dynamics
-(Simscape Model)
-        │
-        ▼
-Measured Angle
-        │
-        └────────── Feedback ──────────┘
-
 
 ---
 
@@ -93,15 +68,13 @@ The controller is implemented using a continuous-time PID block in parallel form
 
 The controller follows:
 
-\[
-u(t)=K_p e(t)+K_i\int e(t)dt+K_d\frac{de(t)}{dt}
-\]
+<img width="490" height="71" alt="image" src="https://github.com/user-attachments/assets/27bad486-96ab-416e-a605-1dc4deafa984" />
+
 
 For the current gains:
 
-\[
-u(t)=2e(t)+\int e(t)dt+0.01\frac{de(t)}{dt}
-\]
+<img width="416" height="62" alt="image" src="https://github.com/user-attachments/assets/7bfa59d4-4627-4154-bdce-725133de7052" />
+
 
 ---
 
@@ -111,9 +84,8 @@ Before integrating the controller with the robot model, a simple closed-loop sys
 
 Plant:
 
-\[
-G(s)=\frac{1}{s+1}
-\]
+<img width="241" height="81" alt="Screenshot 2026-09-27 114705" src="https://github.com/user-attachments/assets/09515dfc-7191-48c1-aec4-e05d81a91594" />
+
 
 ### Basic PID Model
 
@@ -172,22 +144,6 @@ The following video demonstrates the self-balancing robot simulation running in 
 | Steady-State Error | Approximately Zero |
 | Equilibrium Recovery | Successful |
 
----
-
-## Project Files
-
-
-self-balancing-robot-simulink/
-│
-├── README.md
-│
-├── Self_Balancing_Robot.slx
-└── screenshots/
-    ├── robot_model.png
-    ├── basic_pid_model.png
-    ├── pid_parameters.png
-    ├── initial_perturbation.png
-    └── simulation_response.png
 
 
 ---
