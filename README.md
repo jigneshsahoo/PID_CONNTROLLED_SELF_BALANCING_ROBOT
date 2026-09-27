@@ -1,4 +1,4 @@
-# PID_CONNTROLLED_SELF_BALANCING_ROBOT
+PID_CONNTROLLED_SELF_BALANCING_ROBOT
 Modeling and PID control of a two-wheeled self-balancing robot in MATLAB/Simulink using Simscape Multibody and closed-loop feedback.
 # PID-Controlled Two-Wheeled Self-Balancing Robot — MATLAB/Simulink
 
@@ -6,8 +6,8 @@ A simulation-based two-wheeled self-balancing robot developed using **MATLAB**, 
 
 Robot Model<img width="1917" height="947" alt="Screenshot 2026-09-13 133522" src="https://github.com/user-attachments/assets/1b1bcf30-f54d-4f49-aa36-edf3b324b0b1" />
 
-
 ---
+
 
 
 ## Project Overview
@@ -129,10 +129,6 @@ The respse indicates that the PID controller successfully stabilizes the simulat
 ### Simulation Response
 
 Simulation Response<img width="1917" height="1000" alt="Screenshot 2026-09-26 134505" src="https://github.com/user-attachments/assets/3d219410-3ff7-4689-a33e-e0afd75644e2" />
-## Simulation Demo
-
-The following video demonstrates the self-balancing robot simulation running in Simulink with the implemented PID controller.
-
 ---
 
 ## Performance Summary
