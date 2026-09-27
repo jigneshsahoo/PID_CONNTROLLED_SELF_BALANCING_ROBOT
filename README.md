@@ -76,7 +76,6 @@ For the current gains:
 <img width="416" height="62" alt="image" src="https://github.com/user-attachments/assets/7bfa59d4-4627-4154-bdce-725133de7052" />
 
 
----
 
 ## Basic PID Validation Model
 
@@ -90,6 +89,9 @@ Plant:
 ### Basic PID Model
 
 Basic PID Model<img width="1919" height="1012" alt="Screenshot 2026-08-20 214543" src="https://github.com/user-attachments/assets/e37adfd1-b929-4e23-9ddc-3b92671693c0" />
+
+<img width="960" height="342" alt="image" src="https://github.com/user-attachments/assets/1c8e401e-3d1b-4947-9f5f-c6e8bfbcf4ed" />
+
 
 ---
 
